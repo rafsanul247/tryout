@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Assistant, Fjalla_One } from "next/font/google"; // Assistant যোগ করা হয়েছে
 import "./globals.css";
 import Navbar from "@/app/Navbar";
+import MobileBottomNav from "@/app/MobileBottomNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         <Navbar />
+        <MobileBottomNav />
         {children}
       </body>
     </html>
