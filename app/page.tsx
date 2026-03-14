@@ -234,12 +234,12 @@ export default function Home() {
         <div className="bg-[#58595B] flex sm:items-start justify-start px-10 md:px-0 md:items-center md:justify-around mt-4 py-8 flex-col md:flex-row text-gray-300">
           <div className="flex  flex-col mt-2 leading-8 ">
             <Image src={fabriicon} alt="" width={50} height={50} className="mb-6" />
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300">About Fabrilife</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300">Terms & Conditions</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300">Privacy Policy</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300">Cancellation & Return Police</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300">FAQs</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300">Contact Us</span>
+            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">About Fabrilife</span>
+            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Terms & Conditions</span>
+            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Privacy Policy</span>
+            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Cancellation & Return Police</span>
+            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">FAQs</span>
+            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Contact Us</span>
           </div>
           <div className="mt-10 md:mt-6">
             <div className="flex gap-2">
