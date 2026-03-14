@@ -47,6 +47,7 @@ import { FaPinterest } from "react-icons/fa6";
 import { RiTwitterXLine } from "react-icons/ri";
 import TwitterXIcon from "@/components/ui/twitter-x-icon";
 import PinterestIcon from "@/components/ui/pinterest-icon";
+import Footer from "./Footer";
 
 
 export default function Home() {
@@ -105,18 +106,18 @@ export default function Home() {
         </section>
         <section className="mt-4">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 lg:gap-4">
-            <Image src={pic1} alt="" className="w-full h-auto" />
-            <Image src={pic2} alt="" className="w-full h-auto" />
-            <Image src={pic3} alt="" className="w-full h-auto" />
-            <Image src={pic4} alt="" className="w-full h-auto" />
-            <Image src={pic5} alt="" className="w-full h-auto" />
-            <Image src={pic6} alt="" className="w-full h-auto" />
-            <Image src={pic7} alt="" className="w-full h-auto" />
-            <Image src={pic8} alt="" className="w-full h-auto" />
-            <Image src={pic9} alt="" className="w-full h-auto" />
-            <Image src={pic10} alt="" className="w-full h-auto" />
-            <Image src={pic11} alt="" className="w-full h-auto" />
-            <Image src={pic12} alt="" className="w-full h-auto" />
+            <Link href="/productdetails"><Image src={pic1} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic2} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic3} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic4} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic5} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic6} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic7} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic8} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic9} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic10} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic11} alt="" className="w-full h-auto cursor-pointer" /></Link>
+            <Link href="/productdetails"><Image src={pic12} alt="" className="w-full h-auto cursor-pointer" /></Link>
           </div>
         </section>
         <section className="mt-4">
@@ -228,72 +229,8 @@ export default function Home() {
 
       </main>
 
+      <Footer />
       
-
-      <footer>
-        <div className="bg-[#58595B] flex sm:items-start justify-start px-10 md:px-0 md:items-center md:justify-around mt-4 py-8 flex-col md:flex-row text-gray-300">
-          <div className="flex  flex-col mt-2 leading-8 ">
-            <Image src={fabriicon} alt="" width={50} height={50} className="mb-6" />
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">About Fabrilife</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Terms & Conditions</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Cancellation & Return Police</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">FAQs</span>
-            <span className="hover:text-[#F2AD4E] transition transform hover:translate-x-2 duration-300 cursor-pointer">Contact Us</span>
-          </div>
-          <div className="mt-10 md:mt-6">
-            <div className="flex gap-2">
-              <span><Mail className="text-[#F2AD4E]" /></span>
-              <span>GET SPECIAL DISCOUNTS IN YOUR INBOX</span>
-            </div>
-            <div className="flex items-end max-w-lg mt-4 gap-2">
-              {/* ইনপুট ফিল্ড কন্টেইনার */}
-              <div className="flex-1 border-b border-white ">
-                <input
-                  type="email"
-                  placeholder="Enter email to get offers..."
-                  className="w-full bg-transparent py-3 text-white placeholder-gray-400 focus:outline-none font-assistant"
-                />
-              </div>
-
-              {/* বড় সাবস্ক্রাইব বাটন */}
-              <button className="bg-[#F2AD4E] hover:bg-[#df9c3f] text-white px-3 py-2 font-semibold transition-colors duration-300">
-                Subscribe
-              </button>
-            </div>
-            <div className="flex gap-2 mt-10 md:mt-8">
-              <span><Phone className="text-[#F2AD4E]" /></span>
-              <span>FOR ANY HELP YOU MAY CALL US AT</span>
-            </div>
-            <div className="flex flex-col gap-2 mt-4">
-              <span>+8809677666888</span>
-              <span>Customer Service</span>
-              <span>Track your order or get help returning an order</span>
-            </div>
-
-          </div>
-          <div>
-            <div>
-              <div className="flex gap-2 mt-8 md:mt-0">
-                <Check className="text-[#F2AD4E]" />
-                <span>FOLLOW US</span>
-              </div>
-              <div className="mt-4 flex flex-wrap">
-                Stay updated on our latest arrivals,<br /> exclusive promotions and events.
-              </div>
-              <div className="flex gap-4 mt-4">
-                <Instagram className="cursor-pointer" />
-                <FaTiktok size={22} className="cursor-pointer" />
-                <Facebook className="cursor-pointer" />
-                <TwitterXIcon size={25} className="cursor-pointer" />
-                <PinterestIcon size={25} className="cursor-pointer" />
-                <Youtube size={25} className="cursor-pointer" />
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
