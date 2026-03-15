@@ -290,7 +290,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
                     { s: 'XL', c: '42', l: '29', sl: '9' },
 
-                    { s: '2XL', c: '45', l: '30', sl: '9.25' },
+                    { s: 'XXL', c: '45', l: '30', sl: '9.25' },
 
                   ].map((row, i) => (
 
