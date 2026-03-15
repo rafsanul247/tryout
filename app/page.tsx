@@ -125,7 +125,7 @@ export default function Home() {
         <Image 
           src={item.src} 
           alt={`Product ${item.id}`} 
-          className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity" 
+          className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity rounded-md" 
         />
       </Link>
     ))}
@@ -193,7 +193,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-6 gap-2 lg:gap-4 mt-8 lg:mt-4">
             {/* ১. বাম পাশের বড় ছবি (২ কলাম দখল করবে) */}
             <div className="md:col-span-2 relative h-[300px] md:h-auto">
-              <Image src={polo} alt="Featured Polo" className="w-full h-full object-cover" />
+              <Image src={polo} alt="Featured Polo" className="w-full h-full object-cover rounded-lg" />
               <div className="absolute bottom-0 text-2xl text-[#FFFFFF] font-fjalla bg-linear-to-t from-black/80 to-transparent w-full h-24 items-end pb-4 justify-center flex">
                 <span>Designer Polo</span>
               </div>
@@ -201,14 +201,14 @@ export default function Home() {
 
             {/* ২. ডান পাশের ৮টি ছোট ছবি (বাকি ৪ কলাম দখল করবে) */}
             <div className="md:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4">
-              <Image src={polo1} alt="Polo 1" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo2} alt="Polo 2" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo3} alt="Polo 3" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo4} alt="Polo 4" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo5} alt="Polo 5" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo6} alt="Polo 6" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo7} alt="Polo 7" className="w-full h-auto aspect-square object-cover" />
-              <Image src={polo8} alt="Polo 8" className="w-full h-auto aspect-square object-cover" />
+              <Image src={polo1} alt="Polo 1" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo2} alt="Polo 2" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo3} alt="Polo 3" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo4} alt="Polo 4" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo5} alt="Polo 5" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo6} alt="Polo 6" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo7} alt="Polo 7" className="w-full h-auto aspect-square object-cover rounded-lg" />
+              <Image src={polo8} alt="Polo 8" className="w-full h-auto aspect-square object-cover rounded-lg" />
             </div>
           </div>
         </section>

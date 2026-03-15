@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="mt-10 md:mt-6">
           <div className="flex gap-2">
             <span><Mail className="text-[#F2AD4E]" /></span>
-            <span>GET SPECIAL DISCOUNTS IN YOUR INBOX</span>
+            <span className='text-[#F1F1F1]'>GET SPECIAL DISCOUNTS IN YOUR INBOX</span>
           </div>
           <div className="flex items-end max-w-lg mt-4 gap-2">
             <div className="flex-1 border-b border-white">
@@ -37,11 +37,11 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
-          <div className="flex gap-2 mt-10 md:mt-8">
+          <div className="flex gap-2 mt-10 md:mt-10">
             <span><Phone className="text-[#F2AD4E]" /></span>
-            <span>FOR ANY HELP YOU MAY CALL US AT</span>
+            <span className='text-[#F1F1F1]'>FOR ANY HELP YOU MAY CALL US AT</span>
           </div>
-          <div className="flex flex-col gap-2 mt-4">
+          <div className="flex flex-col text-sm gap-0.5 mt-4 text-zinc-300/80">
             <span>+8809677666888</span>
             <span>Customer Service</span>
             <span>Track your order or get help returning an order</span>
@@ -52,9 +52,9 @@ const Footer = () => {
           <div>
             <div className="flex gap-2 mt-8 md:mt-0">
               <Check className="text-[#F2AD4E]" />
-              <span>FOLLOW US</span>
+              <span className='text-[#F1F1F1]'>FOLLOW US</span>
             </div>
-            <div className="mt-4 flex flex-wrap">
+            <div className="mt-4 flex flex-wrap text-[15px] text-zinc-300/80">
               Stay updated on our latest arrivals,<br /> exclusive promotions and events.
             </div>
             <div className="flex gap-4 mt-4">
