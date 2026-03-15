@@ -49,6 +49,20 @@ import TwitterXIcon from "@/components/ui/twitter-x-icon";
 import PinterestIcon from "@/components/ui/pinterest-icon";
 import Footer from "./Footer";
 
+const homeProducts = [
+  { id: 1, src: pic1 },
+  { id: 2, src: pic2 },
+  { id: 3, src: pic3 },
+  { id: 4, src: pic4 },
+  { id: 5, src: pic5 },
+  { id: 6, src: pic6 },
+  { id: 7, src: pic7 },
+  { id: 8, src: pic8 },
+  { id: 9, src: pic9 },
+  { id: 10, src: pic10 },
+  { id: 11, src: pic11 },
+  { id: 12, src: pic12 },
+];
 
 export default function Home() {
   return (
@@ -105,21 +119,18 @@ export default function Home() {
           <div className="flex items-center justify-center text-[22px] lg:text-[32px] py-4 lg:py-6 text-[#CC8119] bg-[#FAF3E7] font-fjalla mt-4 tracking-wider">NEW ARRIVAL</div>
         </section>
         <section className="mt-4">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 lg:gap-4">
-            <Link href="/productdetails"><Image src={pic1} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic2} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic3} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic4} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic5} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic6} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic7} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic8} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic9} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic10} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic11} alt="" className="w-full h-auto cursor-pointer" /></Link>
-            <Link href="/productdetails"><Image src={pic12} alt="" className="w-full h-auto cursor-pointer" /></Link>
-          </div>
-        </section>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 lg:gap-4">
+    {homeProducts.map((item) => (
+      <Link key={item.id} href={`/product/${item.id}`}>
+        <Image 
+          src={item.src} 
+          alt={`Product ${item.id}`} 
+          className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity" 
+        />
+      </Link>
+    ))}
+  </div>
+</section>
         <section className="mt-4">
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-4">
             <div className="relative w-full lg:w-1/2">
