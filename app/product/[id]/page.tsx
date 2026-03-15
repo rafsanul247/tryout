@@ -150,8 +150,8 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         <div className="space-y-6">
           <div className="flex justify-between items-start">
             <h1 className="text-2xl font-bold text-gray-900 leading-tight">{product.name}</h1>
-            <button onClick={() => setIsWishlistOpen(true)} className="p-2 border rounded-full group">
-              <Heart size={20} className="text-gray-400 group-hover:text-red-500" />
+            <button onClick={() => setIsWishlistOpen(true)} className="p-2 border rounded-full group hover:bg-red-100/60 transition-colors cursor-pointer hover:border-red-400/80">
+              <Heart size={20} className="text-gray-400 group-hover:text-red-400/90" />
             </button>
           </div>
 
